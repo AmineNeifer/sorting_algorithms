@@ -36,10 +36,10 @@ void counting_sort(int *array, size_t size)
 
 	maxi = max(array, size) + 1;
 
-	count_arr = malloc(maxi * sizeof(int *));
+	count_arr = malloc(maxi * sizeof(int));
 	if (!count_arr)
 		return;
-	new_array = malloc(size * sizeof(int *));
+	new_array = malloc(size * sizeof(int));
 	if (!new_array)
 		return;
 
