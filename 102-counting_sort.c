@@ -31,7 +31,7 @@ void counting_sort(int *array, size_t size)
 {
 	int *count_arr, *new_array, i, maxi;
 
-	if (!array || size == 0)
+	if (!array || size < 2)
 		return;
 
 	maxi = max(array, size) + 1;
